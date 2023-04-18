@@ -1,15 +1,14 @@
 let total = 0
-let numberList = []
 
 function sumPairValues(val) {
-  const inputValue = document.querySelector("input").value
+  const inputValue = Number(document.querySelector("input").value)
   const span = document.querySelector("span")
 
-  if (!inputValue) {
+  if (!inputValue || typeof inputValue != "number") {
     alert("Número inválido.")
   } else {
     if (inputValue % 2 === 0) {
-      total += inputValue
+      total += Number(inputValue)
       span.innerText = total
     } else total = total
   }
@@ -17,6 +16,7 @@ function sumPairValues(val) {
 
 //Método sem interface
 
+// let numberList = []
 // function sumPairValues(max) {
 //   for (let i = 0; i <= max; i++) {
 //     numberList.push(i)
