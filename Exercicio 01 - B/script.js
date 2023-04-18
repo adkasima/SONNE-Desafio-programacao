@@ -2,8 +2,7 @@ let total = 0
 let numberList = []
 
 function sumPairValues(val) {
-  const input = document.querySelector("input")
-  const inputValue = Number(input.value)
+  const inputValue = document.querySelector("input").value
   const span = document.querySelector("span")
 
   if (!inputValue) {

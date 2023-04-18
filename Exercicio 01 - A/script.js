@@ -9,8 +9,7 @@ function fizzBuzz(val) {
 }
 
 function handleClick() {
-  const input = document.querySelector("input")
-  const inputValue = Number(input.value)
+  const inputValue = document.querySelector("input").value
   if (!inputValue) {
     alert("Número inválido.")
   } else {
